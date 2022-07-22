@@ -1,6 +1,8 @@
 # near-protocol-node-monitoring
 A monitoring tool based on Grafana + Prometheus for Near Protocol Node
 
+![Grafana dasboard](./screenshots/2022-07-22_08-01-37.png "Grafana dasboard image")
+
 # Setup
 
 ### Follow this guides to install docker engine and docker compose:
