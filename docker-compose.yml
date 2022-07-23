@@ -37,7 +37,7 @@ services:
       - '--web.console.templates=/etc/prometheus/consoles'
       - '--storage.tsdb.retention=30d'
       - '--web.enable-lifecycle'
-      - '--web.listen-address=:19001'
+      - '--web.listen-address=localhost:19001'
     restart: unless-stopped
     expose:
       - 19001
@@ -55,8 +55,9 @@ services:
       - '--path.sysfs=/host/sys'
       - '--path.rootfs=/host'
       - '--collector.filesystem.ignored-mount-points=^/(sys|proc|dev|host|etc|boot)($$|/)'
-      - '--web.listen-address=:19002'
+      - '--web.listen-address=localhost:19002'
     restart: unless-stopped
     expose:
       - 19002
     network_mode: host
+
