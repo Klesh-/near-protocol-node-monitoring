@@ -14,7 +14,7 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:3030']
 
-  - job_name: 'near.host'
+  - job_name: 'near.nost'
     scrape_interval: 10s
     static_configs:
       - targets: ['localhost:19002']
