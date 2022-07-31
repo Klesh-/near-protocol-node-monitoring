@@ -18,6 +18,12 @@ cp .env.example .env
 - **GRAFANA_ADMIN_USER** - Grafana admin user name
 - **GRAFANA_ADMIN_PASSWORD** - Grafana admin password name
 
+### Setup your `pool_id`
+- Fill `{YourPoolId}`, example `bob.factory.shardnet.near` 
+```sh
+export POOL_ID={YourPoolId} && sed -i "s/klesh.factory.shardnet.near/$POOL_ID/g" ./grafana/dashboards/near-node-alerts.json
+```
+
 ### Start
 ```sh
 ./start.sh
@@ -31,13 +37,7 @@ cp .env.example .env
 ### Open Grafana
 - Grafana will be available on `http://{Host.IP}:19000`
 
-### Import dashboards
-- Click on [+] -> Dashboard -> Upload JSON file
-- Select file from `./grafana/dashboards/`
-- Repeat for every file in `./grafana/dashboards/`
-
 ### Setup alerts channel
-- Replace `klesh.factory.shardnet.near` to your `stacking_pool_id` for every panel in `Near Node Alerts` dashboard
 - Got to Alerting > Notification channels > Add channel > Add desired channel
 
 # Stake Wars: Episode III. Challenge 004

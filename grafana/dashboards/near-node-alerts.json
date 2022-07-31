@@ -171,7 +171,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "near_is_validator{job=\"node.near\"}",
+          "expr": "near_is_validator{job=\"near.node\"}",
           "interval": "",
           "legendFormat": "State",
           "refId": "A"
@@ -297,7 +297,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "near_final_block_height{job=\"node.near\"} - near_block_height_head{job=\"node.near\"}",
+          "expr": "near_final_block_height{job=\"near.node\"} - near_block_height_head{job=\"near.node\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "Difference",
@@ -424,7 +424,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "near_peer_connections_total{job=\"node.near\"}",
+          "expr": "near_peer_connections_total{job=\"near.node\"}",
           "interval": "",
           "legendFormat": "Peers",
           "refId": "A"
@@ -800,14 +800,14 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "near_validators_chunks_expected{account_id=\"klesh.factory.shardnet.near\",job=\"node.near\"}",
+          "expr": "near_validators_chunks_expected{account_id=\"klesh.factory.shardnet.near\",job=\"near.node\"}",
           "interval": "",
           "legendFormat": "Expected",
           "refId": "A"
         },
         {
           "exemplar": true,
-          "expr": "near_validators_chunks_produced{account_id=\"klesh.factory.shardnet.near\",job=\"node.near\"}",
+          "expr": "near_validators_chunks_produced{account_id=\"klesh.factory.shardnet.near\",job=\"near.node\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "Produced",
@@ -815,7 +815,7 @@
         },
         {
           "exemplar": true,
-          "expr": "near_validators_chunks_produced{account_id=\"klesh.factory.shardnet.near\",job=\"node.near\"} / near_validators_chunks_expected{account_id=\"klesh.factory.shardnet.near\",job=\"node.near\"}",
+          "expr": "near_validators_chunks_produced{account_id=\"klesh.factory.shardnet.near\",job=\"near.node\"} / near_validators_chunks_expected{account_id=\"klesh.factory.shardnet.near\",job=\"near.node\"}",
           "hide": true,
           "interval": "",
           "legendFormat": "Uptime",
@@ -940,14 +940,14 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "near_validators_blocks_expected{account_id=\"klesh.factory.shardnet.near\",job=\"node.near\"}",
+          "expr": "near_validators_blocks_expected{account_id=\"klesh.factory.shardnet.near\",job=\"near.node\"}",
           "interval": "",
           "legendFormat": "Expected",
           "refId": "A"
         },
         {
           "exemplar": true,
-          "expr": "near_validators_blocks_produced{account_id=\"klesh.factory.shardnet.near\",job=\"node.near\"}",
+          "expr": "near_validators_blocks_produced{account_id=\"klesh.factory.shardnet.near\",job=\"near.node\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "Produced",
@@ -955,7 +955,7 @@
         },
         {
           "exemplar": true,
-          "expr": "near_validators_blocks_produced{account_id=\"klesh.factory.shardnet.near\",job=\"node.near\"} / near_validators_blocks_expected{account_id=\"klesh.factory.shardnet.near\",job=\"node.near\"}",
+          "expr": "near_validators_blocks_produced{account_id=\"klesh.factory.shardnet.near\",job=\"near.node\"} / near_validators_blocks_expected{account_id=\"klesh.factory.shardnet.near\",job=\"near.node\"}",
           "hide": true,
           "interval": "",
           "legendFormat": "Uptime",
