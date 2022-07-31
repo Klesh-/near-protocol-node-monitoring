@@ -21,7 +21,7 @@ cp .env.example .env
 ### Setup your `pool_id`
 - Fill `{YourPoolId}`, example `bob.factory.shardnet.near` 
 ```sh
-export POOL_ID={YourPoolId} && sed -i "s/klesh.factory.shardnet.near/$POOL_ID/g" ./grafana/dashboards/near-node-alerts.json
+export POOL_ID={YourPoolId} && sed -i "s/klesh.factory.shardnet.near/$POOL_ID/g" ./grafana/dashboards/*.json
 ```
 
 ### Start
@@ -38,7 +38,7 @@ export POOL_ID={YourPoolId} && sed -i "s/klesh.factory.shardnet.near/$POOL_ID/g"
 - Grafana will be available on `http://{Host.IP}:19000`
 
 ### Setup alerts channel
-- Got to Alerting > Notification channels > Add channel > Add desired channel
+- Got to Alerting > Notification channels > Add channel > Add desired channel (Check `Default` in Notification settings)
 
 # Stake Wars: Episode III. Challenge 004
 https://github.com/near/stakewars-iii/blob/main/challenges/004.md
